@@ -8,12 +8,14 @@
     </title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
-    <script src="https://kit.fontawesome.com/754f4ab304.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/754f4ab304.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 </head>
 <body>
     <!-- nav-bar -->
     <div class="section-one">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
             <a class="navbar-brand" href="#">
                 <img src="asset/logo.png" alt="">
             </a>
@@ -25,19 +27,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home </a>
+                  <a class="nav-link" href="#home">Home </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Skill </a>
+                  <a class="nav-link" href="#skill">Skill </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Project</a>
+                  <a class="nav-link" href="#projects">Project</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#contact">Contact</a>
                 </li>
                 
               </ul>
@@ -52,29 +54,37 @@
     <div class="section-two" >
         <div class="name">
             <h2>
-                Hi!, I am Esther. 
+                Hi! I am Esther. 
             </h2>           
         </div>
 
         <div class="social-icons">
-            <a href="https://web.facebook.com/esthadeyi"><i class="fab fa-facebook"></i></a>
+            <a href="https://github.com/mhizsean"><i class="fab fa-github"></i></a>
             <a href="https://www.instagram.com/mzz_sean/"><i class="fab fa-instagram"></i></a>
             <a href="https://twitter.com/MhizSean"><i class="fab fa-twitter"></i></a>
             <a href="https://www.linkedin.com/in/esther-adeyi-565b4b187/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://web.facebook.com/esthadeyi"><i class="fab fa-facebook"></i></a>
+
         </div>
 
     </div>
 
     <div class="section-three container" id="about">
-        <h2>Who I am</h2>
+        <h2>Who I Am</h2>
         
         <div class="row">
             <div class="col-md-6">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, at ut mollitia laboriosam omnis fuga quibusdam assumenda repudiandae unde eligendi, quo non corporis nam earum?</p>
+                <p>My journey as a developer started in December 2018. 2019 was the year that made me see ‘Tech’ in a very different way.
+                    <br>
+                    I have since developed skills in JavaScript, React, Redux, PHP, MySQL, WordPress, Firebase, HTML, CSS, Bootstrap, Materialize CSS and Material UI. 
+                    <br>
+                    My primary aim is to be able to help many people develop their goals in Tech even as I develop more on what I’ve known. I believe that “as we let our own light shine, we subconsciously give others the permission to do the same.”</p>
+
+                    <span>- Esther Oluwaseun Adeyi</span>
             </div>
             <div class="col-md-6">
                 <div class="img-div">
-                    <img src="asset/2.jpg" alt="">
+                    <img src="asset/3.jpg" alt="">
                 </div>
                 
             </div>
@@ -86,30 +96,223 @@
     <div class="section-four" id="">
         <div class="row">
             <div class="col-md-4">
-                <h2>Frontend Development</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, magnam.</p>
+                <h2>Frontend Dev</h2>
+                <p>I use modern JavaScript libraries like ReactJs, Jquery along side with HTML, CSS BootStrap with other frontend libraries</p>
             </div>
             <div class="col-md-4">
                 <h2>WordPress</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, magnam.</p>
+                <p>A Content Management System that i use to create  websites and blogs, also using plugins to support different section</p>
             </div>
             <div class="col-md-4">
                 <h2>Canva</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, magnam.</p>
+                <p>To create Quick Designs for personal use or personal projects that require designs that I think of.</p>
             </div>
         </div>
 
         <div class="project-scroll">
-            <button>Projects</button>
+            <a href="#projects">
+                <button>Projects</button>
+            </a>
+            
         </div>
     </div>
 
-    <div class="section-five">
-        
+    <div class="section-five" id="skill">
+        <div class="skill-section">
+            <div class="inner-">
+                <h1>My <span>Expertise</span></h1>
+                <div class="skills row">
+                    
+                    <div class="col-md-2 col-sm-6">
+                        <div class="skill">
+                            <div class="skill-img">
+                                <img src="asset/html.png" alt="">
+                            </div>
+                            <div class="skill-name">HTML</div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-2 col-sm-6">
+                        <div class="skill">
+                            <div class="skill-img">
+                                <img src="asset/js.png" alt="">
+                            </div>
+                            <div class="skill-name">JavaScript</div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-2 col-sm-6">
+                        <div class="skill">
+                            <div class="skill-img">
+                                <img src="asset/react.png" alt="">
+                            </div>
+                            <div class="skill-name">ReactJs</div>
+                            
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-md-2 col-sm-6">
+                        <div class="skill">
+                            <div class="skill-img">
+                                <img src="asset/wp.png" alt="">
+                            </div>
+                            <div class="skill-name">WordPress</div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-2 col-sm-6">
+                        <div class="skill">
+                            <div class="skill-img">
+                                <img src="asset/php.png" alt="">
+                            </div>
+                            <div class="skill-name">PHP</div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-2 col-sm-6">
+                        <div class="skill">
+                            <div class="skill-img">
+                                <img src="asset/jq.png" alt="">
+                            </div>
+                            <div class="skill-name">JQuery</div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-2 col-sm-6">
+                        <div class="skill">
+                            <div class="skill-img">
+                                <img src="asset/boot.png" alt="">
+                            </div>
+                            <div class="skill-name">Bootstrap</div>
+                            
+                        </div>
+                    </div>
+                   
+
+                </div>
+            </div>
+        </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <div class="section-six">
+        <div class="projects" id="projects">
+            <h1>My <span>Projects</span></h1>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="asset/tour.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Tour Website</h5>
+                          <p class="card-text">Done using ReactJS, Bootstrap, Node Js, Express</p>
+                          <a href=""><i class="fas fa-link"></i></a>
+                          <a href="https://github.com/mhizsean/Tour"><i class="fab fa-github"></i></a>
+                          
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="asset/quiz.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Quiz App</h5>
+                          <p class="card-text">Done using HTML, CSS, JS</p>
+                          <a href="https://inspiring-jennings-2dc038.netlify.app"><i class="fas fa-link"></i></a>
+                          <a href="https://github.com/mhizsean/Quiz-web-1"><i class="fab fa-github"></i></a>
+                          
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="asset/gpa.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">GPA Calculator App</h5>
+                            <p class="card-text">Done using React, Bootstrap, Context State Management</p>
+                            <a href="https://gpa-1.herokuapp.com/"><i class="fas fa-link"></i></a>
+                            <a href="https://github.com/mhizsean/React-GPA-calc"><i class="fab fa-github"></i></a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="asset/covid.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Covid-19 App</h5>
+                            <p class="card-text">Done with ReactJs, for looking up covid-19 cases</p>
+                            <a href="https://github.com/mhizsean/covid-19"><i class="fas fa-link"></i></a>
+                            <a href="https://github.com/mhizsean/covid-19"><i class="fab fa-github"></i></a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="asset/weather.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Weather App</h5>
+                            <p class="card-text">Done with ReactJs, for looking up covid-19 cases</p>
+                            <a href="https://zen-wiles-bf3ec7.netlify.app/"><i class="fas fa-link"></i></a>
+                            <a href="https://github.com/mhizsean/weather-app"><i class="fab fa-github"></i></a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card" >
+                        <img src="asset/blog.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Blog App</h5>
+                            <p class="card-text">Done using PHP, HTML, BootStrap</p>
+                            <a href="https://github.com/mhizsean/blog-php"><i class="fas fa-link"></i></a>
+                            <a href="https://github.com/mhizsean/blog-php"><i class="fab fa-github"></i></a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="asset/event.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Website</h5>
+                            <p class="card-text">A job done with WordPress for an Event Company</p>
+                            <a href="http://web.cloud9eventsng.com/"><i class="fas fa-link"></i></a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="asset/cuppy.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Agency Website Template</h5>
+                            <p class="card-text">An agency template using HTML,, CSS, JQuery</p>
+                            <a href="https://gifted-joliot-8e3ec1.netlify.app"><i class="fas fa-link"></i></a>
+                            <a href="https://gifted-joliot-8e3ec1.netlify.app"><i class="fab fa-github"></i></a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="asset/pass.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Password Generator App</h5>
+                            <p class="card-text">A password Generator done with HTML, CSS JavaScript</p>
+                            <a href="https://flamboyant-hypatia-df4d00.netlify.app"><i class="fas fa-link"></i></a>
+                            <a href="https://github.com/mhizsean/passwordGenerator-js"><i class="fab fa-github"></i></a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+       
+    </script>
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
