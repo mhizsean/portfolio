@@ -109,14 +109,16 @@ nav ul li a:hover {
     /* border: 3px solid #000; */
     text-align: center;
     padding: 20px;
-    width: 300px;
-    background: #897392;
+    /* width: 300px; */
+    background: #d6d6d63d;
     
 }
 
 .section-three img{
-    width: 100%;
+    /* width: 100%; */
+    object-fit: contain;
     height: 300px;
+
 
 }
 
